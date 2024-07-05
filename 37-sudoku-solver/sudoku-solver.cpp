@@ -4,12 +4,11 @@ public:
         char c = '0' + k;
         int n = board.size();
         for(int i=0;i<n;i++){
-            if(board[i][col]==c){
+            if(board[i][col]==c || board[row][i]==c){
                 return false;
             }
-            if(board[row][i]==c){
-                return false;
-            }
+            
+           
             if(board[3*(row/3)+i/3][3*(col/3)+i%3]==c){
                 return false;
             }
