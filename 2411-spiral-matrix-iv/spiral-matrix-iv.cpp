@@ -45,7 +45,8 @@ public:
                 temp = temp->next;
                 
             }
-            er--;}
+            er--;
+            }
             if(sc<=ec){
             for(int i=er;i>=sr;i--){
                 ans[i][sc] = temp->val;
